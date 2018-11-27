@@ -16,6 +16,14 @@ int sum(int n){
     }
   return total;
 }
+
+int product(int n){
+  int total = 1;
+  for(int i = 1; i <= n; i++){
+    total *= i;
+  }
+  return total;
+}
 int main(){
 
   cout << "Provide an integer: " << endl;
@@ -24,7 +32,9 @@ int main(){
   //cout << "Hello World!"<< endl;
 
   int total = sum(n);
+  int total2 = product(n);
   cout << "The sum of 1 to " << n << " is: " << total << endl;
+  cout << "The product of 1 to " << n << " is: " << total2 << endl;
 
   return 0;
 
